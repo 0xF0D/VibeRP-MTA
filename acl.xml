@@ -1,0 +1,23 @@
+<acl>
+    <group name="Everyone">
+        <acl name="Default"></acl>
+        <object name="user.*"></object>
+        <object name="resource.*"></object>
+    </group>
+    <group name="Admin">
+        <object name="resource.admin"></object>
+        <object name="resource.webadmin"></object>
+    </group>
+    <group name="autoGroup_guieditor">
+        <acl name="autoACL_guieditor"></acl>
+        <object name="resource.guieditor"></object>
+    </group>
+    <acl name="Default">
+        <right name="command.createvehicle" access="true"></right>
+        <right name="general.ModifyOtherObjects" access="true"></right>
+    </acl>
+    <acl name="autoACL_guieditor">
+        <right name="general.ModifyOtherObjects" access="false" who="" pending="true" date=""></right>
+        <right name="function.callRemote" access="false" who="" pending="true" date=""></right>
+    </acl>
+</acl>
